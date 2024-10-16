@@ -9,16 +9,17 @@ main{
 
 .flex-container{
   display: flex;
-
+  flex-direction: row; /* Default to row for larger screens */
+  justify-content: space-between; /* Space out items evenly */
   margin-top: 3rem;
-
   padding: 0 2rem;
 }
 
 /* Form Section */
 
 .form-container{
-  margin-right: -20rem;
+  flex: 1; /* Allow form container to grow */
+  margin-right: 2rem; /* Add margin for spacing */
 }
 
 .form-container .topline{
@@ -48,7 +49,7 @@ main{
 }
 
 .form-control .wrapper{
-  margin-right: 1rem;
+  margin-right: rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,26 +58,21 @@ main{
 
 .form-control .wrapper i{
   position: absolute;
-  right: 1rem;
+  right: 5rem;
   top: 1rem;
   color: #fff;
   
 }
 
 .form-control .wrapper input{
-  padding: 1rem 10rem 1rem .8rem;
+  padding: 1rem; /* Adjust padding to ensure text is visible */
   border-radius: 5px;
-
   background-color: rgb(68, 68, 68);
   border: none;
-
   color: #fff;
-
   outline: none;
-
-
-  margin-bottom: 1rem;
-
+  width: 100%; /* Ensure full width for better fit */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .wrapper input::placeholder{
@@ -86,14 +82,13 @@ main{
 
 .form-control .wrapper textarea.message-box{
   height: 106px;
-  width: 688px;
-  
+  width: 100%; /* Set to 100% for better fit */
   background-color: rgb(68, 68, 68);
-  padding: 1rem 10rem 1rem .8rem;
+  padding: 1rem; /* Adjust padding to ensure text is visible */
   border: none;
   border-radius: 5px;
-
   outline: none;
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .wrapper textarea.message-box{
@@ -155,26 +150,22 @@ main{
 /* Info Container Section */
 
 .info-container.grid {
-  display: flex; /* Ensure flex display for responsiveness */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items */
-  height: auto; /* Allow height to adjust based on content */
-  width: 100%; /* Full width for better responsiveness */
-  margin-top: 3rem;
-  padding: 0 1rem; /* Added padding for better spacing */
+  flex: 1; /* Allow info container to grow */
+  margin-left: 15rem; /* Add margin for spacing */
 }
 
 .flex-info-container {
   display: flex;
-  flex-direction: column; /* Stack items vertically on mobile */
+  flex-direction: column; /* Stack items vertically */
   align-items: center; /* Center items */
   width: 100%; /* Full width for better responsiveness */
 }
 
+/* Centering the text in the wrapper */
 .flex-info-container .wrapper {
   padding: 1rem; /* Adjust padding for better spacing */
   width: 100%; /* Full width for better responsiveness */
-  box-sizing: border-box; /* Include padding in width calculation */
+  text-align: center; /* Center text */
 }
 
 .flex-info-container .wrapper h4 {
@@ -197,13 +188,18 @@ main{
 
 @media screen and (max-width: 1130px) {
   .flex-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items */
     padding: 0 1rem; /* Added padding for better spacing */
   }
 
+  .form-container {
+    margin-right: 0; /* Remove right margin on mobile */
+    width: 100%; /* Full width for better fit on mobile */
+  }
+
   .info-container.grid {
-    margin: 2rem 0; /* Reduced margin for better spacing */
+    margin-left: 0; /* Remove left margin on mobile */
     width: 100%; /* Full width for better responsiveness */
   }
 
@@ -215,19 +211,15 @@ main{
 @media screen and (max-width: 749px) {
   .form-control {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Ensure single column layout on mobile */
     gap: 1rem; /* Added gap for spacing between inputs */
     padding: 0 1rem; /* Added padding to prevent fields from touching edges */
   }
 
   .form-control .wrapper,
-  .form-control input {
-    width: 70%; /* Set to 70% for better fit on mobile */
-  }
-
-  .form-control .wrapper textarea.message-box {
-    height: 106px;
-    width: 70%; /* Set to 70% for better fit on mobile */
+  .form-control input,
+  .form-control textarea.message-box {
+    width: 100%; /* Set to 100% for better fit on mobile */
   }
 
   .info-container.grid {
@@ -250,64 +242,29 @@ main{
   }
 }
 
-@media screen and (max-width: 555px) {
-  .title-wrapper {
-    width: 90%; /* Adjusted for better responsiveness */
-  }
-
-  .form-control .wrapper,
-  .form-control input {
-    width: 70%; /* Set to 70% for better fit on mobile */
-  }
-
-  .form-control .wrapper textarea.message-box {
-    height: 106px;
-    width: 200%; /* Set to 70% for better fit on mobile */
-  }
-
-  .submit-btn {
-    padding: .8rem 1.2rem;
-    width: 70%; /* Set to 70% for better fit on mobile */
-  }
-}
-
 @media screen and (max-width: 439px) {
   .flex-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
     padding: 0; /* Reset padding */
-  }
-
-  .info-container.grid {
-    margin: 2rem 0; /* Reduced margin for better spacing */
-    padding: 0;
-    width: 100%; /* Full width for better responsiveness */
-  }
-
-  .title-wrapper {
-    width: 90%; /* Adjusted for better responsiveness */
   }
 
   .form-control {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Ensure single column layout */
     gap: 1rem; /* Added gap for spacing between inputs */
     padding: 0 1rem; /* Added padding to prevent fields from touching edges */
   }
 
   .form-control .wrapper,
-  .form-control input {
-    width: 70%; /* Set to 70% for better fit on mobile */
-  }
-
-  .form-control .wrapper textarea.message-box {
-    height: 106px;
-    width: 70%; /* Set to 70% for better fit on mobile */
+  .form-control input,
+  .form-control textarea.message-box {
+    width: 100%; /* Set to 100% for better fit on mobile */
   }
 
   .submit-btn {
     padding: .8rem 1.2rem;
-    width: 70%; /* Set to 70% for better fit on mobile */
+    width: 100%; /* Set to 100% for better fit on mobile */
   }
 
   .flex-info-container .wrapper {
@@ -316,5 +273,73 @@ main{
 
   .flex-info-container .wrapper h4 {
     font-size: 1.2rem; /* Further adjust font size for very small screens */
+  }
+}
+
+/* Adjusting the form control for larger screens */
+@media screen and (min-width: 750px) {
+  .form-control {
+    display: flex; /* Use flexbox for larger screens */
+    flex-direction: row; /* Keep items in a row */
+    justify-content: space-between; /* Space out items evenly */
+  }
+
+  .form-control .wrapper {
+    flex: 1; /* Allow each wrapper to grow equally */
+    margin-right: 4rem; /* Add margin for spacing */
+  }
+
+  .form-control .wrapper:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+
+  /* Increase the width of input and textarea for longer columns */
+  .form-control .wrapper input,
+  .form-control .wrapper textarea.message-box {
+    width: 115%; /* Ensure full width for better fit */
+    min-width: 300px; /* Set a minimum width for better appearance */
+    max-width: 500px; /* Set a maximum width for better appearance */
+    font-size: 0.8rem; /* Set a base font size for better readability */
+    padding: 1.2rem; /* Increase padding for better touch targets */
+  }
+
+  .form-control .wrapper i {
+    position: absolute;
+    right: 2rem; /* Adjust this value to move the icon further to the right on larger screens */
+    top: 1rem;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .form-control .wrapper i {
+    position: absolute;
+    right: -2rem; /* Adjust this value to move the icon further to the right on larger screens */
+    top: 1rem;
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .form-control .wrapper textarea.message-box {
+    width: 250%; /* Set to 100% to fill the available space */
+    max-width: 708px; /* Adjust this value to make the message box wider */
+    height: 100px; /* Adjust height as needed */
+  }
+}
+
+.wrapper.message-wrapper i {
+  position: absolute;
+  right: 1rem; /* Adjust this value to move the icon further to the right */
+  top: 1rem; /* Adjust this value to move the icon vertically */
+  color: #fff; /* Ensure the icon color is set */
+}
+
+@media screen and (min-width: 750px) {
+  .wrapper.message-wrapper i {
+    position: absolute;
+    right: -2rem; /* Adjust this value to move the icon further to the right on PC screens */
+    top: 1rem; /* Adjust this value to move the icon vertically */
+    color: #fff; /* Ensure the icon color is set */
   }
 }
