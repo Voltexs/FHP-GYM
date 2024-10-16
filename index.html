@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EnVizion Gym Front Page">
+	<meta name="keywords" content="front page">
+	<meta name="author" content="Nikola Štefančić">
+  <title>FichardtParkGym | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/user-sign.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+
+  <link rel="icon" type="image/x-icon" href="./logos/code.png">
+
+</head>
+<body>
+  
+  <!-- Header Navbar Section -->
+
+  <header>
+
+    <nav class="navbar">
+
+      <a href="index.html"><img src="./logos/code.png" alt="envizion-logo" class="navbar-logo logo-animate"></a>
+
+      <div class="navbar-toggle" id="mobile-menu">
+
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+      </div>
+
+      <div class="navbar-menu navbar-animate">
+
+        <a href="index.html" class="navbar-link">Home</a>
+        <a href="news.html" class="navbar-link">Buy Zone</a>
+        <a href="services.html" class="navbar-link">Services</a>
+        <a href="group-programs.html" class="navbar-link ">Group Programs</a>
+        <a href="membership.html" class="navbar-link ">Memberships</a>
+        <a href="about-us.html" class="navbar-link">About Us</a>
+        <a href="contact.html" class="navbar-link">Contact</a>
+
+
+        <button class="login-btn">
+          Login
+          <div class="tooltip">
+            <p class="margin">Don't Have an Account?</p>
+            <p>You can Sign Up</p>
+          </div>
+        </button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  
+
+  <main>
+
+    <!-- User Login || Sign In  -->
+
+    <div class="user-sign-flex">
+      <section class="user-sign-in-container">
+
+        <span class="icon-close" id="closeButton">
+          <ion-icon name="close-circle"></ion-icon>
+        </span>
+  
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#" method="GET">
+    
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label for="email">Email</label>
+            </div>
+    
+    
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="remember-forget-pass">
+              <label><input type="checkbox">Remember Me</label>
+              <a href="#" class="forgot-pass">Forgot Password?</a>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+            <div class="login-register">
+              <p>Don't have an Account?<a href="#" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+  
+  
+        <span class="icon-close" id="closeButton">
+          <ion-icon name="close"></ion-icon>
+        </span>
+  
+        <div class="form-box register">
+          <h2>Register</h2>
+          <form action="#" method="GET">
+    
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required>
+              <label for="text">Username</label>
+            </div>
+  
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label for="email">Email</label>
+            </div>
+    
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="remember-forget-pass">
+              <label><input type="checkbox">I agree to the terms & conditions</label>
+              
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+            <div class="login-register">
+              <p>Already have an Account?<a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+    
+      </section>
+    </div>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+      <video autoplay muted loop class="background-video">
+        <source src="path/to/vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="hero-content">
+        <h1 class="hero-title-animate">Focus in <span class="delay-span-animate">Strength</span>, Excellence in <span class="delay-span-animate">Form</span></h1>
+        <h1 class="hero-title-animate-2">Aesthetic: Where Fitness Meets Art</h1>
+        <p class="hero-animate-p">Achieve Your Best Self!</p>
+        <a href="./membership.html" class="get-started-btn gsap-animate-btn">Join Us Now</a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+
+    <section class="services">
+
+      <div class="services-container">
+
+        <div>
+
+          <div class="hiddenLeft">
+
+            <p class="topline">Features</p>
+            <h1 class="services-heading">
+            What We Offer 
+            </h1>
+
+          </div>
+
+          <div class="services-features hiddenLeft">
+
+            <p class="services-feature delay hiddenLeft">
+              <i class="fa-solid fa-clock services-icon"></i>
+              5AM - 9PM ACCESS
+            </p>
+
+            <p class="services-feature delay hiddenLeft">
+              <i class="fa-solid fa-user-group services-icon"></i>
+              Personal Training Sessions
+            </p>
+
+            <p class="services-feature delay hiddenLeft ">
+              <i class="fa-solid fa-heart-circle-bolt services-icon" ></i>
+              STUDIO SECTION
+            </p>
+
+            <p class="services-feature delay hiddenLeft">
+              <i class="fa-solid fa-dumbbell services-icon"></i>
+              Elite Performance Equipment
+            </p>
+
+            <p class="services-feature delay hiddenLeft">
+              <i class="fa-solid fa-table-tennis-paddle-ball services-icon"></i>
+              Tennis Playground
+            </p>
+
+            <p class="services-feature delay hiddenLeft">
+              <i class="fa-solid fa-bolt services-icon" ;"></i>
+              Refuel Zone
+            </p>
+
+          </div>
+
+        </div>
+
+        <div>
+          <img src="./images/hero-background-2.jpg" alt="" class="services-img img-animate-top-right">
+        </div>
+
+        <div>
+          <img src="./images/hero-background-4.jpg" alt="" class="services-img img-animate-bottom-left">
+        </div>
+
+        <div>
+          <img src="./images/hero-background-3.jpg" alt="" class="services-img img-animate-bottom-right">
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <!-- Membership Section -->
+
+    <section class="memberships">
+      <h1>Our Plans</h1>
+      <p>Start today with <span class="membership-style">Student</span> or <span class="membership-style">Adult</span> and become a member!</p>
+
+      <div class="membership-wrapper hiddenTop">
+
+        <div class="membership-card silver-member">
+          <div class="membership-title">
+            <i class="fas fa-dumbbell card-icon"></i>
+            <h3>Student</h3>
+          </div>
+          <div class="membership-perks">
+            <p><span class="price-style">R210</i></span>/month</p>
+            <p>Gain access to the gym room</p>
+          </div>
+          <a href="./membership.html" class="get-started-btn membership-btn">Sign Up</a>
+          
+        </div>
+        <div class="membership-card gold-member">
+          <div class="membership-title">
+            <i class="fa-solid fa-medal card-icon"></i>
+            <h3>Adult</h3>
+            <div class="card-absolute">
+              <p>Top Choice</p>  
+            </div>
+          </div>
+          <div class="membership-perks">
+            <p><span class="price-style">R260</i></span>/month</p>
+            <p>Gain access to the gym room</p>
+          </div>
+
+          <a href="./membership.html" class="get-started-btn membership-btn">Sign Up</a>
+
+        </div>
+
+    </section>
+
+    <!-- Personal Trainers Section -->
+
+    <section class="team">
+      <div class="team-wrapper">
+
+        <div class="team-text animate-team">
+          <p class="topline">Personal Coaching</p>
+          <h1>Meet our Trainers</h1>
+          <p class="team-desc">
+            Zain is a personal trainer with years of experience and a proven track record of transforming countless clients' physiques. 
+            As a former competitive athlete, he understands what it takes to push beyond limits and achieve extraordinary results. 
+            Known for his tough-love approach, Zain pushes his clients to their limits, motivating them with intense, no-nonsense workouts that hurt in the moment but leave you stronger and more confident. 
+            His dedication has earned him rave reviews from clients who praise not only their physical transformations but also the mental toughness theyve gained. 
+            If youre looking for a trainer who demands your best and makes it worth every second, Zain is the coach you need.
+          </p>
+        </div>
+        
+        <div class="team-card animate-team">
+          <p>Zain</p>
+          <img src="./images/2.png" alt="trainer-1" class="team-img" title="Zain | Personal Trainer">
+        </div>
+
+        <div class="team-text animate-team">
+          <p class="topline">Personal Coaching</p>
+          <h1>Meet our Trainers</h1>
+          <p class="team-desc">
+            Daniel is the latest addition to our team of personal trainers, bringing fresh energy and passion to the gym. 
+            Though he's new to the field, Daniel is already making a name for himself with his dedication and eagerness to help clients reach their goals. 
+            With a strong commitment to learning and a genuine desire to see people succeed, Daniel is quickly building a reputation for being approachable, motivating, and determined. 
+            Whether you're new to the gym or looking for a fresh start, Daniel is here to guide you every step of the way, ensuring that each session leaves you feeling stronger and more confident.
+          </p>
+        </div>
+
+        <div class="team-card animate-team">
+          <p>Daniel</p>
+          <img src="./images/p1.png" alt="trainer-6" class="team-img" title="Anna | Personal Trainer">
+        </div>
+
+        <div class="team-text animate-team">
+          <p class="topline">Free Trial</p>
+          <h1>7 day Trial Period</h1>
+          <p class="team-desc">
+            You can work with each trainer for up to <span>7 days</span> for <span>free</span> in order to see if they're a good fit for your set of goals!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email Newsletter Section -->
+
+    <section class="email">
+      <div class="email-content">
+        <h1 class="animate-email">Get Access to Members Only Perks</h1>
+        <p class="animate-email">Sign up for our newsnetter belowe to get all the news!</p>
+        <form action="#" method="GET" class="animate-email">
+          <div class="form-wrap">
+            <label for="email">
+              <input type="email" placeholder="Enter your email" id="email" required>
+            </label>
+            <button class="get-started-btn email-btn" type="submit" for="email">Sign up</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+
+        <div class="footer-desc">
+          <h1>FHP<span>Gym</span></h1>
+          <p><a href="mailto:envizion@gym.com" class="footer-email"><i class="fa-solid fa-envelope footer-icon"></i>fichardtpark@gym.com</a></p>
+          <p id="phone"><i class="fa-solid fa-phone footer-icon"></i><a href="tel:347- 885 - 2503"></br>(+27) 61 349 0873</a></p>
+          <p><i class="fa-solid fa-location-dot footer-icon"></i>Bloemfontein,Fichardtpark</p>
+        </div>
+
+        <div class="footer-links">
+          <h2 class="footer-title">Contact us</h2>
+          <a href="./contact.html" class="footer-link">Contact</a>
+          <a href="./contact.html" class="footer-link">Sponsorships</a>
+        </div>
+
+        <div class="footer-links">
+          <h2 class="footer-title">Memberships</h2>
+          <a href="./membership.html" class="footer-link">Pricing</a>
+          <a href="./membership.html" class="footer-link">Plans</a>
+          <a href="./membership.html" class="footer-link">FAQ</a>
+        </div>
+
+        <div class="footer-links info">
+          <h2 class="footer-title">Informations</h2>
+          <p><a href="#" class="footer-link">Condition of Sales</a></p>
+          <p><a href="#" class="footer-link">Payment security statement</a></p>
+        </div>
+
+        <div class="footer-links socials">
+          <h2 class="footer-title">Socials</h2>
+          <div class="social-icons">
+            <div>
+              <i class="fa-brands fa-instagram footer-icon"></i>
+              <a href="#" class="footer-link">Instagram</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-facebook footer-icon"></i>
+              <a href="#" class="footer-link">Facebook</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-tiktok footer-icon"></i>
+              <a href="#" class="footer-link">TikTok</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-youtube footer-icon "></i>
+              <a href="#" class="footer-link">YouTube</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-x-twitter footer-icon"></i>
+              <a href="#" class="footer-link">Twitter</a>
+            </div>
+          </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/user-sign-in.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script defer src="./js/animation.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Observer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/CustomEase.min.js"></script>
+
+
+</html>

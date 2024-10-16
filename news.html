@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News Page">
+	<meta name="keywords" content="news">
+	<meta name="author" content="Nikola Štefančić">
+  <title>FichardtParkGym | Buy Zone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/news.css">
+  <link rel="stylesheet" href="./styles/user-sign.css">
+  <link rel="stylesheet" href="./styles/animations.css">
+
+  <link rel="icon" type="image/x-icon" href="./logos/code.png">
+
+</head>
+<body>
+  
+  <!-- Header Navbar Section -->
+
+  <header>
+
+    <nav class="navbar">
+
+      <a href="index.html"><img src="./logos/code.png" alt="envizion-logo" class="navbar-logo logo-animate"></a>
+
+      <div class="navbar-toggle" id="mobile-menu">
+
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+      </div>
+
+      <div class="navbar-menu navbar-animate">
+
+        <a href="index.html" class="navbar-link">Home</a>
+        <a href="news.html" class="navbar-link">Buy Zone</a>
+        <a href="services.html" class="navbar-link">Services</a>
+        <a href="group-programs.html" class="navbar-link ">Group Programs</a>
+        <a href="membership.html" class="navbar-link ">Memberships</a>
+        <a href="about-us.html" class="navbar-link">About Us</a>
+        <a href="contact.html" class="navbar-link">Contact</a>
+
+
+        <button class="login-btn">
+          Login
+          <div class="tooltip">
+            <p class="margin">Don't Have an Account?</p>
+            <p>You can Sign Up</p>
+          </div>
+        </button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  
+
+  <main>
+
+    <!-- User Login || Sign In  -->
+
+    <div class="user-sign-flex">
+      <section class="user-sign-in-container">
+
+        <span class="icon-close" id="closeButton">
+          <ion-icon name="close-circle"></ion-icon>
+        </span>
+  
+        <div class="form-box login">
+          <h2>Login</h2>
+          <form action="#" method="GET">
+    
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label for="email">Email</label>
+            </div>
+    
+    
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="remember-forget-pass">
+              <label><input type="checkbox">Remember Me</label>
+              <a href="#" class="forgot-pass">Forgot Password?</a>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+            <div class="login-register">
+              <p>Don't have an Account?<a href="#" class="register-link">Register</a></p>
+            </div>
+          </form>
+        </div>
+  
+  
+        <span class="icon-close" id="closeButton">
+          <ion-icon name="close"></ion-icon>
+        </span>
+  
+        <div class="form-box register">
+          <h2>Register</h2>
+          <form action="#" method="GET">
+    
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required>
+              <label for="text">Username</label>
+            </div>
+  
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required>
+              <label for="email">Email</label>
+            </div>
+    
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="remember-forget-pass">
+              <label><input type="checkbox">I agree to the terms & conditions</label>
+              
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+            <div class="login-register">
+              <p>Already have an Account?<a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+    
+      </section>
+    </div>
+
+    <section class="hero-background-container">
+
+      <div class="news-title-wrapper flex-center">
+        <h3 class="topline cursor-def animate-top">Latest</h3>
+        <h1 class="news-title cursor-def animate-top">Buy Zone</h1>
+      </div>
+    
+      <!-- First set of 3 flip cards -->
+      <h1 class="energy-drink-title">Energy Drinks</h1>
+
+<div class="flip-container">
+  <div class="square-flip">
+    <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+      <div class="square-container">
+        <div class="align-center"><img src="images/EE.png" class="boxshadow" alt=""></div>
+        <h2 class="textshadow">Qhush Energy Drink</h2>
+        <h3 class="textshadow">Unleash Your Potential with Qhush — The Power-Packed Energy Drink That Fuels Your Body and Mind for Peak Performance!</h3>
+      </div>
+      <div class="flip-overlay"></div>
+    </div>
+    <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+      <div class="square-container2">
+        <div class="align-center"></div>
+        <a href="javascript:void(0);" id="viewButton" class="boxshadow kallyas-button">View</a>
+      </div>
+      <div class="flip-overlay"></div>
+    </div>
+  </div>
+
+  <div class="square-flip">
+    <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+      <div class="square-container">
+        <div class="align-center"><img src="images/EE111.png" class="boxshadow" alt=""></div>
+        <h2 class="textshadow">GAS</h2>
+        <h3 class="textshadow">Ignite Your Drive with Gas — The High-Octane Energy Drink That Powers You Through Every Challenge!</h3>
+      </div>
+      <div class="flip-overlay"></div>
+    </div>
+    <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+      <div class="square-container2">
+        <div class="align-center"></div>
+        <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+      </div>
+      <div class="flip-overlay"></div>
+    </div>
+  </div>
+
+  <div class="square-flip">
+    <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+      <div class="square-container">
+        <div class="align-center"><img src="images/cokes.png" class="boxshadow" alt=""></div>
+        <h2 class="textshadow">Drinks</h2>
+        <h3 class="textshadow">Refresh Your World with Every Sip — The Classic Taste That Fuels Fun, Lifts Spirits, and Keeps You Going!</h3>
+      </div>
+      <div class="flip-overlay"></div>
+    </div>
+    <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+      <div class="square-container2">
+        <div class="align-center"></div>
+        <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+      </div>
+      <div class="flip-overlay"></div>
+    </div>
+  </div>
+</div>
+
+    
+      <!-- Second set of 3 flip cards -->
+
+      <h1 class="energy-drink-title">Pre Workouts</h1>
+
+
+      <div class="flip-container">
+        <div class="square-flip">
+          <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container">
+              <div class="align-center"><img src="images/pre.png" class="boxshadow" alt=""></div>
+              <h2 class="textshadow">Psychotic Pre Workouts</h2>
+              <h3 class="textshadow">The Hardcore Pre-Workout Formula That Powers Your Most Intense Workouts!</h3>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+          <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container2">
+              <div class="align-center"></div>
+              <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+        </div>
+      
+        <div class="square-flip">
+          <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container">
+              <div class="align-center"><img src="images/pre1.png" class="boxshadow" alt=""></div>
+              <h2 class="textshadow">C4 Pre</h2>
+              <h3 class="textshadow">Fuel Your Fire with C4 — Unleash Explosive Energy for Every Workout!</h3>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+          <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container2">
+              <div class="align-center"></div>
+              <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+        </div>
+      
+        <div class="square-flip">
+          <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container">
+              <div class="align-center"><img src="images/pre2.png" class="boxshadow" alt=""></div>
+              <h2 class="textshadow">War Hammer</h2>
+              <h3 class="textshadow">Crush Your Limits with War Hammer — Unleash Relentless Power and Focus!</h3>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+          <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container2">
+              <div class="align-center"></div>
+              <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- third set of 3 flip cards -->
+    <h1 class="energy-drink-title">Protein</h1>
+
+    <div class="flip-container">
+      <div class="square-flip">
+        <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container">
+            <div class="align-center"><img src="images/pro.png" class="boxshadow" alt=""></div>
+            <h2 class="textshadow">Whey Protein</h2>
+            <h3 class="textshadow">Maximize Your Gains with Whey Protein — The Essential Fuel for Muscle Recovery and Growth!</h3>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+        <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container2">
+            <div class="align-center"></div>
+            <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+      </div>
+    
+      <div class="square-flip">
+        <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container">
+            <div class="align-center"><img src="images/pro1.png" class="boxshadow" alt=""></div>
+            <h2 class="textshadow">Vegan Whey Protein</h2>
+            <h3 class="textshadow">Power Your Plant-Based Journey with Vegan Whey — For Strength and Recovery!</h3>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+        <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container2">
+            <div class="align-center"></div>
+            <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+      </div>
+    
+      <div class="square-flip">
+        <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container">
+            <div class="align-center"><img src="images/pro2.png" class="boxshadow" alt=""></div>
+            <h2 class="textshadow">Mass Gainer</h2>
+            <h3 class="textshadow">Pack on Muscle with Our Mass Gainer — The Ultimate Fuel for Serious Gains!</h3>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+        <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container2">
+            <div class="align-center"></div>
+            <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- third set of 3 flip cards -->
+    <h1 class="energy-drink-title">Meals</h1>
+
+    <div class="flip-container">
+      <div class="square-flip">
+        <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container">
+            <div class="align-center"><img src="images/prep.png" class="boxshadow" alt=""></div>
+            <h2 class="textshadow">Cutting Season</h2>
+            <h3 class="textshadow">Sculpt Your Physique with Cutting Meals — Deliciously Balanced Nutrition for Lean Gains!</h3>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+        <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container2">
+            <div class="align-center"></div>
+            <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+      </div>
+    
+      <div class="square-flip">
+        <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container">
+            <div class="align-center"><img src="images/cut1.png" class="boxshadow" alt=""></div>
+            <h2 class="textshadow">Maintaining Season</h2>
+            <h3 class="textshadow">Maintain Your Strength with Balanced Meals — Fuel Your Everyday Performance!</h3>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+        <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container2">
+            <div class="align-center"></div>
+            <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+      </div>
+    
+      <div class="square-flip">
+        <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container">
+            <div class="align-center"><img src="images/cut2.png" class="boxshadow" alt=""></div>
+            <h2 class="textshadow">Bulking Season</h2>
+            <h3 class="textshadow">Bulk Up with Power-Packed Meals — Fuel Your Gains and Build Muscle!</h3>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+        <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+          <div class="square-container2">
+            <div class="align-center"></div>
+            <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+          </div>
+          <div class="flip-overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- third set of 3 flip cards -->
+    <h1 class="energy-drink-title">Recovery</h1>
+  
+      <div class="flip-container">
+        <div class="square-flip">
+          <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container">
+              <div class="align-center"><img src="images/sup.png" class="boxshadow" alt=""></div>
+              <h2 class="textshadow">BCAA</h2>
+              <h3 class="textshadow">Elevate Your Workout with BCAAs — Boost Recovery and Maximize Gains!</h3>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+          <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container2">
+              <div class="align-center"></div>
+              <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+        </div>
+      
+        <div class="square-flip">
+          <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container">
+              <div class="align-center"><img src="images/sup1.png" class="boxshadow" alt=""></div>
+              <h2 class="textshadow">Fat Burners</h2>
+              <h3 class="textshadow">Ignite Your Metabolism with Our Fat Burner — Sculpt Your Body and Shed Pounds!</h3>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+          <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container2">
+              <div class="align-center"></div>
+              <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+        </div>
+      
+        <div class="square-flip">
+          <div class='square' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container">
+              <div class="align-center"><img src="images/sup2.png" class="boxshadow" alt=""></div>
+              <h2 class="textshadow">Creatine</h2>
+              <h3 class="textshadow">Unleash Your Power with Creatine — Fuel Your Strength and Endurance!</h3>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+          <div class='square2' data-image="http://titanicthemes.com/files/flipbox/kallyas-bundle.png">
+            <div class="square-container2">
+              <div class="align-center"></div>
+              <a href="http://kallyas.net" target="_blank" class="boxshadow kallyas-button">View</a>
+            </div>
+            <div class="flip-overlay"></div>
+          </div>
+        </div>
+      </div>
+  
+  
+
+  </section>
+  </main>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+
+        <div class="footer-desc">
+          <h1>FHP<span>Gym</span></h1>
+          <p class="footer-email"><a href="mailto:envizion@gym.com"><i class="fa-solid fa-envelope footer-icon"></i>fichardtpark@gym.com</a></p>
+          <p class="phone"><a href="tel:347- 885 - 2503"><i class="fa-solid fa-phone footer-icon"></i>(+27) 61 349 0873</a></p>
+          <p class="location"><i class="fa-solid fa-location-dot footer-icon"></i>Bloemfontein,Fichardtpark</p>
+        </div>
+
+        <div class="footer-links">
+          <h2 class="footer-title">Contact us</h2>
+          <a href="./contact.html" class="footer-link">Contact</a>
+          <a href="./contact.html" class="footer-link">Sponsorships</a>
+        </div>
+
+        <div class="footer-links">
+          <h2 class="footer-title">Memberships</h2>
+          <a href="./membership.html" class="footer-link">Pricing</a>
+          <a href="./membership.html" class="footer-link">Plans</a>
+          <a href="./membership.html" class="footer-link">FAQ</a>
+        </div>
+
+        <div class="footer-links info">
+          <h2 class="footer-title">Informations</h2>
+          <p><a href="#" class="footer-link">Condition of Sales</a></p>
+          <p><a href="#" class="footer-link">Payment security statement</a></p>
+        </div>
+
+        <div class="footer-links socials">
+          <h2 class="footer-title">Socials</h2>
+          <div class="social-icons">
+            <div>
+              <i class="fa-brands fa-instagram footer-icon"></i>
+              <a href="#" class="footer-link">Instagram</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-facebook footer-icon"></i>
+              <a href="#" class="footer-link">Facebook</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-tiktok footer-icon"></i>
+              <a href="#" class="footer-link">TikTok</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-youtube footer-icon "></i>
+              <a href="#" class="footer-link">YouTube</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-x-twitter footer-icon"></i>
+              <a href="#" class="footer-link">Twitter</a>
+            </div>
+          </div>
+        </div>
+
+</body>
+
+<script src="./js/mobile-menu.js"></script>
+
+<script src="./js/user-sign-in.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script defer src="./js/animation.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Observer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/TextPlugin.min.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/CustomEase.min.js"></script>
+
+<!-- Modal Structure -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" id="closeModal">&times;</span>
+    <h2 style="color:  rgb(232, 163, 104);">Qhush Energy Drink - Nutritional Values</h2>
+    <p style="color:  rgb(232, 163, 104);">Calories: 3-4</p>
+    <p style="color: rgb(232, 163, 104);">Caffeine: 300mg</p>
+    <p style="color:  rgb(232, 163, 104);">Protein: 0g</p>
+    <p style="color: rgb(232, 163, 104);">Carbohydrates: 0g</p>
+    <p style="color:  rgb(232, 163, 104);">Sugars: 0g</p>
+    <p style="color:  rgb(232, 163, 104);">Fat: 0g</p>
+
+    <!-- Add more nutritional information as needed -->
+  </div>
+</div>
+
+<style>
+  /* Modal styles */
+  .modal {
+    position: fixed; 
+    z-index: 1000; /* Ensure it appears above other elements */
+    left: 0; /* Start from the left */
+    top: 0; /* Start from the top */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.74); /* Semi-transparent dark background */
+    visibility: hidden; /* Start hidden */
+    opacity: 0; /* Start hidden */
+    transform: scale(0); /* Start scaled down */
+    transition: visibility 0s 0.5s, opacity 0.5s ease, transform 0.5s ease; /* Delay visibility change */
+  }
+
+  .modal-content {
+    background-color: transparent; /* Fully transparent background */
+    margin: auto; /* Center the modal content */
+    padding: 20px;
+    border: 2px solid rgb(232, 163, 104); /* Border color matching the root color */
+    width: 30%; /* Adjusted width to 30% for a much narrower modal */
+    max-width: 4000px; /* Match max-width */
+    max-height: 440px; /* Match max-height */
+    position: relative; /* Position relative for scaling */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%) scale(1); /* Center vertically and ensure full size */
+    border-radius: 20px; /* Match border-radius */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Match box-shadow */
+    color: rgb(232, 163, 104); /* Text color matching the root color */
+    backdrop-filter: blur(50px); /* Heavy blur effect */
+  }
+
+  .modal.show {
+    visibility: visible; /* Make visible */
+    opacity: 1; /* Fade in */
+    transform: scale(1); /* Scale to full size */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Fade in and scale */
+  }
+
+  /* Ensure all text elements inherit the color */
+  .modal-content h2,
+  .modal-content p,
+  .modal-content span { /* Added span to target nutritional values */
+    color: rgb(232, 163, 104); /* Set text color for headings, paragraphs, and spans */
+  }
+
+  /* Close button styles */
+  .close-button {
+    color: rgb(232, 163, 104); /* Close button color matching the root color */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close-button:hover,
+  .close-button:focus {
+    color: rgb(232, 163, 104); /* Change color on hover */
+    text-decoration: none;
+  }
+</style>
+
+<script>
+  // Get modal element
+  const modal = document.getElementById("modal");
+  const viewButton = document.getElementById("viewButton");
+  const closeModal = document.getElementById("closeModal");
+
+  // Show modal when view button is clicked
+  viewButton.onclick = function() {
+    modal.classList.add('show'); // Add class to show modal
+  }
+
+  // Close modal when close button is clicked
+  closeModal.onclick = function() {
+    modal.classList.remove('show'); // Remove class to hide modal
+  }
+
+  // Close modal when clicking outside of the modal
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.classList.remove('show'); // Remove class to hide modal
+    }
+  }
+</script>
+
+</html>
