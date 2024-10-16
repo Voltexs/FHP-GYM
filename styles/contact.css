@@ -136,15 +136,17 @@ main{
   text-transform: uppercase;
   font-size: 1.1rem;
   font-weight: 500;
-  background-color: red;
+  background-color: var(--secondary-color);
   border: none;
   color: #fff;
 }
 
-.submit-btn:hover{
+
+.submit-form:hover{
   -webkit-box-shadow: 0 0 10px #fff;
         box-shadow: 0 0 10px #fff;
 }
+
 .submit-btn:active{
   opacity: .8;
 }
@@ -320,4 +322,3 @@ main{
 
   
 }
-

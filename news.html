@@ -549,8 +549,6 @@
     <p style="color: rgb(232, 163, 104);">Carbohydrates: 0g</p>
     <p style="color:  rgb(232, 163, 104);">Sugars: 0g</p>
     <p style="color:  rgb(232, 163, 104);">Fat: 0g</p>
-
-    <!-- Add more nutritional information as needed -->
   </div>
 </div>
 
@@ -571,14 +569,21 @@
     transition: visibility 0s 0.5s, opacity 0.5s ease, transform 0.5s ease; /* Delay visibility change */
   }
 
+  .modal.show {
+    visibility: visible; /* Make visible when shown */
+    opacity: 1; /* Fully opaque */
+    transform: scale(1); /* Scale to full size */
+    transition: visibility 0s, opacity 0.5s ease, transform 0.5s ease; /* No delay for visibility */
+  }
+
   .modal-content {
     background-color: transparent; /* Fully transparent background */
     margin: auto; /* Center the modal content */
     padding: 20px;
     border: 2px solid rgb(232, 163, 104); /* Border color matching the root color */
-    width: 30%; /* Adjusted width to 30% for a much narrower modal */
-    max-width: 4000px; /* Match max-width */
-    max-height: 440px; /* Match max-height */
+    width: 95%; /* Adjusted width to 95% for better mobile responsiveness */
+    max-width: 600px; /* Set a max-width for larger screens */
+    max-height: 80%; /* Limit height for better visibility */
     position: relative; /* Position relative for scaling */
     top: 50%; /* Center vertically */
     transform: translateY(-50%) scale(1); /* Center vertically and ensure full size */
@@ -586,35 +591,7 @@
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Match box-shadow */
     color: rgb(232, 163, 104); /* Text color matching the root color */
     backdrop-filter: blur(50px); /* Heavy blur effect */
-  }
-
-  .modal.show {
-    visibility: visible; /* Make visible */
-    opacity: 1; /* Fade in */
-    transform: scale(1); /* Scale to full size */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Fade in and scale */
-  }
-
-  /* Ensure all text elements inherit the color */
-  .modal-content h2,
-  .modal-content p,
-  .modal-content span { /* Added span to target nutritional values */
-    color: rgb(232, 163, 104); /* Set text color for headings, paragraphs, and spans */
-  }
-
-  /* Close button styles */
-  .close-button {
-    color: rgb(232, 163, 104); /* Close button color matching the root color */
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .close-button:hover,
-  .close-button:focus {
-    color: rgb(232, 163, 104); /* Change color on hover */
-    text-decoration: none;
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
   }
 </style>
 
