@@ -1,5 +1,3 @@
-
-
 .hero-background-container{
   background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.7)), url('../backgrounds/background-2.jpg');
   height: 100%;
@@ -165,23 +163,37 @@
   }
   .second-grid-container{
     grid-template-columns: 1fr;
+    width: 1000px;
   }
 }
 @media screen and (max-width: 580px) {
   .grid-container{
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  .second-grid-container{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr; /* Two columns for mobile */
+    gap: 0rem; /* Reduced gap for better fit */
+    padding: 0; /* No padding */
   }
 
   .card-container{
-    padding: .8rem 1rem;
+    margin: 0 auto; /* Center the cards */
+    padding: 0rem; /* Adjust padding */
+    font-size: 0.8rem; /* Adjust font size if necessary */
+    width: 88%;
+  }
+
+  .card-title-wrapper h1{
+    font-size: 1.1rem; /* Smaller title size */
+  }
+
+  .perk-price .price-style{
+    font-size: 1.7rem; /* Smaller price size */
+  }
+
+  .perk-desc p{
+    font-size: 0.8rem; /* Smaller description size */
   }
 
   .card-title-wrapper{
-    margin-top: 2rem;
+    margin-top: 0.5rem; /* Adjusted margin */
   }
 }
 
