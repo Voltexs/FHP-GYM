@@ -154,31 +154,32 @@ main{
 
 /* Info Container Section */
 
-.info-container.grid{
-  grid-template-columns: 1fr;
-  height: 400px;
-  width: 600px;
+.info-container.grid {
+  display: flex; /* Ensure flex display for responsiveness */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+  height: auto; /* Allow height to adjust based on content */
+  width: 100%; /* Full width for better responsiveness */
   margin-top: 3rem;
-  margin-left: 20rem;
+  padding: 0 1rem; /* Added padding for better spacing */
 }
 
-.flex-info-container{
+.flex-info-container {
   display: flex;
-  align-items: center;
+  flex-direction: column; /* Stack items vertically on mobile */
+  align-items: center; /* Center items */
+  width: 100%; /* Full width for better responsiveness */
 }
 
-.flex-info-container .wrapper h4,
-.flex-info-container .wrapper h4
-{
-  font-size: clamp(1rem, 6vw, 2rem);
+.flex-info-container .wrapper {
+  padding: 1rem; /* Adjust padding for better spacing */
+  width: 100%; /* Full width for better responsiveness */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.flex-info-container .wrapper{
-  padding: 0 1rem;
-}
-
-.flex-info-container .wrapper h4{
-  color: var(--secondary-color);
+.flex-info-container .wrapper h4 {
+  font-size: clamp(1rem, 5vw, 2rem); /* Responsive font size */
+  text-align: center; /* Center text for better appearance */
 }
 
 .info-icon{
@@ -194,131 +195,126 @@ main{
   width: 100%;
 }
 
-@media screen and (750px <= width <= 1130px) {
-  .flex-container{
+@media screen and (max-width: 1130px) {
+  .flex-container {
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem; /* Added padding for better spacing */
   }
 
-  .info-container.grid{
-    margin: 4rem 0 0 0;
-    padding: 0;
+  .info-container.grid {
+    margin: 2rem 0; /* Reduced margin for better spacing */
+    width: 100%; /* Full width for better responsiveness */
   }
 
-  .title-wrapper{
-    width: 55%;
+  .title-wrapper {
+    width: 90%; /* Adjusted for better responsiveness */
   }
-
 }
-@media screen and (566px <= width <= 749px) {
-  .flex-container{
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .info-container.grid{
-    margin: 4rem 0 0 0;
-    padding: 0;
-  }
-
-  .title-wrapper{
-    width: 55%;
-  }
-
-  .form-control{
+@media screen and (max-width: 749px) {
+  .form-control {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem; /* Added gap for spacing between inputs */
+    padding: 0 1rem; /* Added padding to prevent fields from touching edges */
   }
 
   .form-control .wrapper,
-  
-  .form-control input{
-    width: 420px;
+  .form-control input {
+    width: 70%; /* Set to 70% for better fit on mobile */
   }
 
-
-  .form-control .wrapper textarea.message-box{
+  .form-control .wrapper textarea.message-box {
     height: 106px;
-    width: 420px;
+    width: 70%; /* Set to 70% for better fit on mobile */
   }
 
-  
+  .info-container.grid {
+    margin: 2rem 0; /* Reduced margin for better spacing */
+    padding: 0 1rem; /* Added padding for better spacing */
+  }
+
+  .flex-info-container {
+    flex-direction: column; /* Stack items vertically on mobile */
+    align-items: center; /* Center items */
+  }
+
+  .flex-info-container .wrapper {
+    padding: 1rem; /* Adjust padding for better spacing */
+    width: 100%; /* Full width for better responsiveness */
+  }
+
+  .flex-info-container .wrapper h4 {
+    font-size: 1.5rem; /* Adjust font size for better readability on mobile */
+  }
 }
-@media screen and (440px <= width <= 555px) {
-  .flex-container{
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .info-container.grid{
-    margin: 4rem 0 0 0;
-    padding: 0;
-  }
-
-  .title-wrapper{
-    width: 40%;
-  }
-
-  .form-control{
-    display: grid;
-    grid-template-columns: 1fr;
+@media screen and (max-width: 555px) {
+  .title-wrapper {
+    width: 90%; /* Adjusted for better responsiveness */
   }
 
   .form-control .wrapper,
-  
-  .form-control input{
-    width: 250px;
+  .form-control input {
+    width: 70%; /* Set to 70% for better fit on mobile */
   }
 
-
-  .form-control .wrapper textarea.message-box{
+  .form-control .wrapper textarea.message-box {
     height: 106px;
-    width: 250px;
+    width: 200%; /* Set to 70% for better fit on mobile */
   }
 
-  .submit-btn{
+  .submit-btn {
     padding: .8rem 1.2rem;
+    width: 70%; /* Set to 70% for better fit on mobile */
   }
-
-  
 }
-@media screen and (280px <= width <= 439px) {
-  .flex-container{
+
+@media screen and (max-width: 439px) {
+  .flex-container {
     flex-direction: column;
     align-items: center;
+    padding: 0; /* Reset padding */
+  }
 
+  .info-container.grid {
+    margin: 2rem 0; /* Reduced margin for better spacing */
     padding: 0;
+    width: 100%; /* Full width for better responsiveness */
   }
 
-  .info-container.grid{
-    margin: 4rem 0 0 0;
-    padding: 0;
+  .title-wrapper {
+    width: 90%; /* Adjusted for better responsiveness */
   }
 
-  .title-wrapper{
-    width: 40%;
-  }
-
-  .form-control{
+  .form-control {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 1rem; /* Added gap for spacing between inputs */
+    padding: 0 1rem; /* Added padding to prevent fields from touching edges */
   }
 
   .form-control .wrapper,
-  .form-control input{
-    width: 250px;
+  .form-control input {
+    width: 70%; /* Set to 70% for better fit on mobile */
   }
 
-
-
-  .form-control .wrapper textarea.message-box{
+  .form-control .wrapper textarea.message-box {
     height: 106px;
-    width: 250px;
+    width: 70%; /* Set to 70% for better fit on mobile */
   }
 
-  .submit-btn{
+  .submit-btn {
     padding: .8rem 1.2rem;
+    width: 70%; /* Set to 70% for better fit on mobile */
   }
 
-  
+  .flex-info-container .wrapper {
+    padding: 0.5rem; /* Reduce padding for very small screens */
+  }
+
+  .flex-info-container .wrapper h4 {
+    font-size: 1.2rem; /* Further adjust font size for very small screens */
+  }
 }
