@@ -163,7 +163,7 @@
   }
   .second-grid-container{
     grid-template-columns: 1fr;
-    width: 1000px;
+    width: 400px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -177,7 +177,7 @@
     margin: 0 auto; /* Center the cards */
     padding: 0rem; /* Adjust padding */
     font-size: 0.8rem; /* Adjust font size if necessary */
-    width: 88%;
+    width: 85%;
   }
 
   .card-title-wrapper h1{

@@ -79,22 +79,31 @@
 }
 
 .footer-links.socials{
-  grid-column: 1 / -1;
+  grid-column: 1 / -1; /* Make it span the full width on mobile */
   grid-row: 2 / 3;
   justify-self: center;
   text-align: center;
+  display: flex; /* Change to flex for better alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
 }
 
 .social-icons{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 1rem; /* Space between icons */
 }
 
 .social-icons > div{
   display: flex;
-  align-items: center;
+  align-items: center; /* Align items vertically */
+  gap: 0.5rem; /* Space between icon and text */
+}
+
+/* Move icons slightly up using transform */
+.social-icons i {
+  transform: translateX(10px); /* Adjust this value to move icons up */
 }
 
 .footer-links.socials{
@@ -245,4 +254,25 @@
   /* ... existing media query styles ... */
 }
 
-/* ... rest of the existing code ... */
+/* Add media query for mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .footer-links.socials {
+    margin-top: 1rem; /* Add some spacing above */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .social-icons {
+    flex-direction: column; /* Stack icons and text vertically on mobile */
+    align-items: center; /* Center items */
+  }
+
+  .social-icons > div {
+    gap: 0.25rem; /* Reduce space between icon and text on mobile */
+  }
+
+  .social-icons i {
+    transform: translateY(-8px); /* Move icons slightly up on mobile as well */
+  }
+}
+
+/* ... existing code ... */
